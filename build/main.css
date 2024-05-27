@@ -77,14 +77,14 @@ section .product-button:hover {
   .container {
     max-width: 80%;
   }
-  .products {
+  .container .products {
     grid-template-columns: repeat(2, 48.5%);
     column-gap: 3%;
   }
 }
 @media screen and (max-width: 767px) {
-  .products {
-    display: block;
+  .container .products {
+    grid-template-columns: 100%;
   }
   .product-item {
     margin-bottom: 32px;

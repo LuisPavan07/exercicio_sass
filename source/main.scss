@@ -89,17 +89,18 @@ section {
 @media screen and (max-width: variaveis.$tablet) {
     .container {
         max-width: 80%;
-    }
-
-    .products {
-        grid-template-columns: repeat(2, 48.5%);
-        column-gap: 3%;
+        .products {
+            grid-template-columns: repeat(2, 48.5%);
+            column-gap: 3%;
+        }
     }
 }
 
 @media screen and (max-width: variaveis.$mobile) {
-    .products {
-        display: block;
+    .container {
+        .products {
+        grid-template-columns: 100%;
+        }
     }
 
     .product-item  {
